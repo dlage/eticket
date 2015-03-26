@@ -1,4 +1,5 @@
 ActiveAdmin.register AllotmentTicketType do
+  permit_params :quantity, :quantity_commited
 
 
   # See permitted parameters documentation:
