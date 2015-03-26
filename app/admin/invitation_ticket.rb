@@ -1,4 +1,5 @@
 ActiveAdmin.register InvitationTicket do
+  permit_params :quantity_delivered, :quantity_assigned
 
 
   # See permitted parameters documentation:
