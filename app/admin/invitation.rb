@@ -1,4 +1,5 @@
 ActiveAdmin.register Invitation do
+  permit_params :notes
 
 
   # See permitted parameters documentation:
