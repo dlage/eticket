@@ -1,6 +1,15 @@
 ActiveAdmin.register InvitationGroup do
-  permit_params :title, :description
+  permit_params :title, :description, allotments_ids: []
 
+  form do |f|
+    f.inputs do
+      f.input :title
+      f.input :description
+      f.input :division
+      f.input :allotments, :as => :select, :input_html => {:multiple => true}
+    end
+    f.actions
+  end
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
