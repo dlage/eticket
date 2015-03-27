@@ -66,4 +66,5 @@ end
 
 group :development do
   gem 'better_errors'
+  gem 'seed_dump'
 end
